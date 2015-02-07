@@ -28,12 +28,25 @@ public class Character {
 	}
 
 	// Health Points
-	public void setHp(int hp) {
+	private void setHp(int hp) {
 		this.hp = hp;
 	}
 
 	public int getHp() {
 		return hp;
+	}
+	
+	public void loseHP(int hp) {
+		int nbr = (int) ((Math.random() * 100) + 1);
+		if(nbr <= 40) {
+			System.out.println("BLOCK!");
+		} else {
+			setHp(getHp() - hp);
+		}
+	}
+	
+	public void gainHP(int hp) {
+		setHp(getHp() + hp);
 	}
 
 	// Power
@@ -55,6 +68,6 @@ public class Character {
 
 	@Override
 	public String toString() {
-		return "Name: " + name + "\nHp: " + hp + "\nPower: " + power;
+		return "Name: " + name + " Hp: " + hp;
 	}
 }

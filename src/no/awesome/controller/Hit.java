@@ -7,6 +7,6 @@ public class Hit implements Ability {
 
 	@Override
 	public void invokeOnTarget(Character c) {
-		c.setHp(c.getHp() - 10);
+		c.loseHP(10);
 	}
 }

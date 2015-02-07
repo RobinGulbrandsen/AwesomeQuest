@@ -14,17 +14,15 @@ public class GameEngine {
 	
 	public void start() {
 		
-//		while(teamIsAlive(teamA) && teamIsAlive(teamB)) {
+		while(teamIsAlive(teamA) && teamIsAlive(teamB)) {
 			Character charactersTurn = teamA.get(0);
 			Character targetToInvoke = teamB.get(0);
-			
-			System.out.println(teamB.get(0));
 			
 			charactersTurn.getAbility(0).invokeOnTarget(targetToInvoke);
 			
 			System.out.println(teamB.get(0));
 			
-	//	}
+		}
 	}
 	
 	private boolean teamIsAlive(List<Character> team) {
