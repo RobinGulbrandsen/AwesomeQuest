@@ -1,9 +1,11 @@
 package no.awesome.view;
 
+import no.awesome.controller.GameEngine;
+
 public class ConsoleProgram {
 	
 	public static void main(String[] args) {
-		System.out.println("Hello Awesome!");
+		GameEngine gm = new GameEngine();
 	}
 
 }
