@@ -1,5 +1,5 @@
 package no.awesome.controller;
 
-public class Arena {
-
+public class GameEngine {
+	
 }
