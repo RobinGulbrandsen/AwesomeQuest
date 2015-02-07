@@ -10,8 +10,8 @@ public class Arena extends JFrame {
 		
         setJMenuBar(new WindowMenu());
 		
-		setLocationRelativeTo(null);
 		setSize(500, 400);
+		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 	}
